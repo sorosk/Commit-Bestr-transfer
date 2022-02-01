@@ -1,5 +1,6 @@
 import csv
 import datetime
+import os
 
 
 with open('datetime.date()', 'wb') as csvfile:
@@ -9,3 +10,6 @@ with open('datetime.date()', 'wb') as csvfile:
     filewriter.writerow(['Derek', 'Software Developer'])
     filewriter.writerow(['Steve', 'Software Developer'])
     filewriter.writerow(['Paul', 'Manager'])
+
+username = os.environ['username']
+pwd = os.environ['pwd']
