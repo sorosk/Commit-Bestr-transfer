@@ -49,7 +49,14 @@ def makefile(I1, I2, I3, I4, I5, I6, I7, I8, Tid, Crawl, Egen, Kick, Bein, Arm, 
     current_date_string = str(current_date) + '.csv'
 
     # Creating CSV file
+<<<<<<< HEAD
     with open(current_date_string, 'w', newline='') as csvfile:  # The CSV file name is todays date
         filewriter = csv.writer(csvfile, quotechar='"', quoting=csv.QUOTE_MINIMAL)
         filewriter.writerow(header)  # Row of names/headers
         filewriter.writerow(data)  # Row of data
+=======
+    with open(current_date_string, 'w', newline='') as csvfile: # The CSV file name is todays date
+        filewriter = csv.writer(csvfile, quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        filewriter.writerow(header) # Row of names/headers
+        filewriter.writerow(data) # Row of data
+>>>>>>> 18af13493b1c9e55f9f91b42b5bb1ab121ecc561
