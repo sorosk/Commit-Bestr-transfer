@@ -1,11 +1,11 @@
 import os
 import csv_maker
 
-#Username for BESTR
+# Username for BESTR
 username = os.environ['username']
 pwd = os.environ['pwd']
 
-#CSV writing
+# CSV writing
 I1 = 1000
 I2 = 2000
 I3 = 3000

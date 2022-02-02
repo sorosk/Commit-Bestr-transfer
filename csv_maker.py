@@ -2,7 +2,7 @@ import csv
 from datetime import date
 
 def makefile(I1, I2, I3, I4, I5, I6, I7, I8, Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill):
-    #List of names
+    # List of names
     header = [
         'Dato',
         'I1',
@@ -22,7 +22,7 @@ def makefile(I1, I2, I3, I4, I5, I6, I7, I8, Tid, Crawl, Egen, Kick, Bein, Arm, 
         'Andre',
         'Teknikkdrill']
 
-    #List of data
+    # List of data
     data = [
         date.today(),
         I1,
