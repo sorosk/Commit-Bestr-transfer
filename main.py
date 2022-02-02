@@ -24,4 +24,4 @@ Andre = 1600
 Teknikkdrill = 1700
 
 csv_maker.makefile(I1, I2, I3, I4, I5, I6, I7, I8,
-Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill)
+                   Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill)
