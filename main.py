@@ -1,11 +1,11 @@
 import os
 import csv_maker
 
-### Username for BESTR ###
+#Username for BESTR
 username = os.environ['username']
 pwd = os.environ['pwd']
 
-### CSV writing ###
+#CSV writing
 I1 = 1000
 I2 = 2000
 I3 = 3000
@@ -23,4 +23,5 @@ Arm = 1500
 Andre = 1600
 Teknikkdrill = 1700
 
-csv_maker.makefile(I1, I2, I3, I4, I5, I6, I7, I8, Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill)
+csv_maker.makefile(I1, I2, I3, I4, I5, I6, I7, I8,
+Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill)
