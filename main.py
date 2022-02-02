@@ -1,5 +1,5 @@
 import os
-import csv-maker
+import csv_maker
 
 ### Username for BESTR ###
 username = os.environ['username']
@@ -23,4 +23,4 @@ Arm = 1500
 Andre = 1600
 Teknikkdrill = 1700
 
-csv-maker.makefile(I1, I2, I3, I4, I5, I6, I7, I8, Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill)
+csv_maker.makefile(I1, I2, I3, I4, I5, I6, I7, I8, Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill)
