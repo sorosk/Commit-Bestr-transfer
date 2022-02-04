@@ -15,6 +15,3 @@ jobs:
       run: python -c 'import os;print(os.environ)'
       env:
         ENV_SECRET: ${{ secrets.PWD}} ${{ secrets.USERNAME}}
-    
-    - name: Test inline env vars for python
-      run: ENV_SECRET=${{ secrets.PWD}} ${{ secrets.USERNAME}} python -c 'import os;print(os.environ)'
