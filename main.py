@@ -6,22 +6,22 @@ username = os.environ['username']
 pwd = os.environ['pwd']
 
 # CSV writing
-I1 = 1000
-I2 = 2000
-I3 = 3000
-I4 = 4000
-I5 = 5000
-I6 = 6000
-I7 = 7000
-I8 = 8000
-Tid = "2:02"
-Crawl = 1100
-Egen = 1200
-Kick = 1300
-Bein = 1400
-Arm = 1500
-Andre = 1600
+i1 = 1000
+i2 = 2000
+i3 = 3000
+i4 = 4000
+i5 = 5000
+i6 = 6000
+i7 = 7000
+i8 = 8000
+tid = "2:02"
+crawl = 1100
+egen = 1200
+kick = 1300
+bein = 1400
+arm = 1500
+andre = 1600
 Teknikkdrill = 1700
 
-csv_maker.makefile(I1, I2, I3, I4, I5, I6, I7, I8,
-                   Tid, Crawl, Egen, Kick, Bein, Arm, Andre, Teknikkdrill)
+csv_maker.makefile(i1, i2, i3, i4, i5, i6, i7, i8,
+                   tid, crawl, egen, kick, bein, arm, andre, teknikkdrill)
