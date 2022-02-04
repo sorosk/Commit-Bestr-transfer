@@ -81,6 +81,7 @@ def makefile(plan, i1, i2, i3, i4, i5, i6, i7, i8, time, crawl, own, kick, bein,
 
     # Creating CSV file
     with open(current_date_string, 'w', newline='') as csv_file:  # The CSV file name is todays date
-        filewriter = csv.writer(csv_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        filewriter = csv.writer(csv_file, delimiter=';',
+                                quotechar='"', quoting=csv.QUOTE_MINIMAL)
         filewriter.writerow(header)  # Row of names/headers
         filewriter.writerow(data)  # Row of data
