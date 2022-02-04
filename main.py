@@ -14,9 +14,9 @@ i5 = 5000
 i6 = 6000
 i7 = 7000
 i8 = 8000
-tid = "2:02"
+time = "2:02"
 crawl = 1100
-egen = 1200
+own = 1200
 kick = 1300
 bein = 1400
 arm = 1500
@@ -24,4 +24,4 @@ andre = 1600
 drills = 1700
 
 csv_maker.makefile(i1, i2, i3, i4, i5, i6, i7, i8,
-                   tid, crawl, egen, kick, bein, arm, andre, drills)
+                   time, crawl, own, kick, bein, arm, andre, drills)

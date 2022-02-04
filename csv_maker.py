@@ -2,30 +2,47 @@ import csv
 from datetime import date
 
 
-def makefile(i1, i2, i3, i4, i5, i6, i7, i8, tid, crawl, egen, kick, bein, arm, andre, drills):
+def makefile(i1, i2, i3, i4, i5, i6, i7, i8, time, crawl, own, kick, bein, arm, andre, drills):
     # List of names
     header = [
-        'Dato',
-        'I1',
-        'I2',
-        'I3',
-        'I4',
-        'I5',
-        'I6',
-        'I7',
-        'I8',
-        'Tid svømming',
-        'Crawl',
-        'Egen',
-        'Kick',
-        'Bein',
-        'Arm',
-        'Andre',
-        'Teknikkdrill']
+        'Date(dd.mm.yyyy)',
+        'TrainingPlan',
+        'Long/Short',
+        'Endurance - Easy',  # i1
+        'Endurance - Moderate',  # i2
+        'Endurarance - L-AT',  # i3
+        'Endurance - H-AT',  # i4
+        'Endurance - Maks O2',  # i5
+        'Endurance - Anaerob T',  # i6
+        'Endurance - Anaerob P',  # i7
+        'Endurance - Speed',  # i8
+        'Time Swimming',
+        'Strength -Base',
+        'Strength Max',
+        'Strength Ekspolosive',
+        'Mobility / Stretching',
+        'Swimming Crawl',
+        'Swimming Own',
+        'Swimming Kick',
+        'Swimming Legs',
+        'Swimming Arms',
+        'Swimming Other',
+        'Swimming Technique',
+        'Rest. Drink During Training',
+        'Rest. Nutrition during training',
+        'Rest. Nutrtion after training',
+        'Rest. Sleep/rest after training',
+        'Rest. Physical treatment after training',
+        'Perceived Excertion',
+        'Form 1-10',
+        'CompetitionTime',
+        'Kommentarer'
+    ]
 
     # List of data
     data = [
         date.today(),
+        '',
         i1,
         i2,
         i3,
@@ -34,9 +51,13 @@ def makefile(i1, i2, i3, i4, i5, i6, i7, i8, tid, crawl, egen, kick, bein, arm, 
         i6,
         i7,
         i8,
-        tid,
+        time,
+        '',
+        '',
+        '',
+        '',
         crawl,
-        egen,
+        own,
         kick,
         bein,
         arm,
@@ -44,7 +65,7 @@ def makefile(i1, i2, i3, i4, i5, i6, i7, i8, tid, crawl, egen, kick, bein, arm, 
         drills
     ]
 
-    # Creating filename of todays date
+    # Creating filename of today's date
     current_date = date.today()
     current_date_string = str(current_date) + '.csv'
 
