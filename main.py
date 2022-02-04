@@ -21,7 +21,7 @@ kick = 1300
 bein = 1400
 arm = 1500
 andre = 1600
-Teknikkdrill = 1700
+drills = 1700
 
 csv_maker.makefile(i1, i2, i3, i4, i5, i6, i7, i8,
-                   tid, crawl, egen, kick, bein, arm, andre, teknikkdrill)
+                   tid, crawl, egen, kick, bein, arm, andre, drills)

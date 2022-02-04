@@ -2,7 +2,7 @@ import csv
 from datetime import date
 
 
-def makefile(i1, i2, i3, i4, i5, i6, i7, i8, tid, crawl, egen, kick, bein, arm, andre, teknikkdrill):
+def makefile(i1, i2, i3, i4, i5, i6, i7, i8, tid, crawl, egen, kick, bein, arm, andre, drills):
     # List of names
     header = [
         'Dato',
@@ -41,7 +41,7 @@ def makefile(i1, i2, i3, i4, i5, i6, i7, i8, tid, crawl, egen, kick, bein, arm, 
         bein,
         arm,
         andre,
-        teknikkdrill
+        drills
     ]
 
     # Creating filename of todays date
