@@ -2,7 +2,7 @@ import csv
 from datetime import date
 
 
-def makefile(i1, i2, i3, i4, i5, i6, i7, i8, time, crawl, own, kick, bein, arm, andre, drills):
+def makefile(plan, i1, i2, i3, i4, i5, i6, i7, i8, time, crawl, own, kick, bein, arm, andre, drills):
     # List of names
     header = [
         'Date(dd.mm.yyyy)',
@@ -42,7 +42,8 @@ def makefile(i1, i2, i3, i4, i5, i6, i7, i8, time, crawl, own, kick, bein, arm, 
     # List of data
     data = [
         date.today(),
-        '',
+        plan,  # Training plan
+        None,  # Long/Shortcourse
         i1,
         i2,
         i3,
@@ -52,17 +53,26 @@ def makefile(i1, i2, i3, i4, i5, i6, i7, i8, time, crawl, own, kick, bein, arm, 
         i7,
         i8,
         time,
-        '',
-        '',
-        '',
-        '',
+        None,
+        None,
+        None,
+        None,
         crawl,
         own,
         kick,
         bein,
         arm,
         andre,
-        drills
+        drills,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None,
+        None
     ]
 
     # Creating filename of today's date
@@ -71,6 +81,6 @@ def makefile(i1, i2, i3, i4, i5, i6, i7, i8, time, crawl, own, kick, bein, arm, 
 
     # Creating CSV file
     with open(current_date_string, 'w', newline='') as csv_file:  # The CSV file name is todays date
-        filewriter = csv.writer(csv_file, quotechar='"', quoting=csv.QUOTE_MINIMAL)
+        filewriter = csv.writer(csv_file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         filewriter.writerow(header)  # Row of names/headers
         filewriter.writerow(data)  # Row of data
