@@ -1,6 +1,7 @@
 import requests
 import json
 
+
 def login(username, password):
     cookies = {
         'locale': 'nb-NO',
@@ -31,7 +32,8 @@ def login(username, password):
         'Accept-Language': 'nb,en-US;q=0.9,en;q=0.8',
     }
 
-    pre_data = '"password":"{}","persistent":false,"username":"{}"'.format(password, username)
+    pre_data = '"password":"{}","persistent":false,"username":"{}"'.format(
+        password, username)
     data = '{'+pre_data+'}'
     response = requests.post('https://www.bestr.no/api/membership/accounts/login', headers=headers, cookies=cookies,
                              data=data)
@@ -71,13 +73,15 @@ headers = {
 
 session = login('Daddahu_test', 'Terycrews123')
 with open("2022-02-04.csv", 'r') as f:
-   text = f.read()
-   text2 = text
-   print(text2)
+    text = f.read()
+    text2 = text
+    print(text2)
 
-pre_data = '"content":"{}","sportId":"08d60015402ff40ddac564839c40516d"'.format(text2)
+pre_data = '"content":"{}","sportId":"08d60015402ff40ddac564839c40516d"'.format(
+    text2)
 data = '{'+pre_data+'}'
 print(data)
-r = session.post('https://www.bestr.no/api/migration/import/csv', headers=headers, cookies=cookies, data=data)
+r = session.post('https://www.bestr.no/api/migration/import/csv',
+                 headers=headers, cookies=cookies, data=data)
 
 print(r.content)
