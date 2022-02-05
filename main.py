@@ -8,7 +8,7 @@ pwd = os.environ['pwd']
 '''
 
 # CSV writing
-plan = 'This is the training program.\nThis is newline'
+plan = 'This is the training program.\r\nThis is newline'
 i1 = 1000
 i2 = 2000
 i3 = 3000
