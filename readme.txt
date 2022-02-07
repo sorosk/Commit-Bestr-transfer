@@ -1,0 +1,4 @@
+{"content":"Date(dd.mm.yyyy);TrainingPlan;Long/Short;Endurance - Easy;Endurance - Moderate;Endurarance - L-AT;Endurance - H-AT;Endurance - Maks O2;Endurance - Anaerob T;Endurance - Anaerob P;Endurance - Speed;Time Swimming;Strength -Base;Strength Max;Strength Ekspolosive;Mobility / Stretching;Swimming Crawl;Swimming Own;Swimming Kick;Swimming Legs;Swimming Arms;Swimming Other;Swimming Technique;Rest. Drink During Training;Rest. Nutrition during training;Rest. Nutrtion after training;Rest. Sleep/rest after training;Rest. Physical treatment after training;Perceived Excertion;Form 1-10;CompetitionTime;Kommentarer
+2022-02-04;"Hello world, 
+this is traning program";;1000;2000;3000;4000;5000;6000;7000;8000;2:02:00;;;;;1100;1200;1300;1400;1500;1600;1700;;;;;;;;;
+","sportId":"08d60015402ff40ddac564839c40516d"}
